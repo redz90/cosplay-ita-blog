@@ -256,6 +256,33 @@
             color: #ec4899;
         }
 
+        .article-body {
+            font-size: 1rem;
+            line-height: 1.8;
+            color: #444;
+        }
+
+        .article-body p {
+            margin-bottom: 1.5rem;
+        }
+
+        .article-body h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: #1a1a1a;
+        }
+
+        .article-body ul {
+            margin-left: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .article-body li {
+            margin-bottom: 0.5rem;
+        }
+
         @media (max-width: 768px) {
             .header-content {
                 flex-direction: column;
@@ -324,7 +351,7 @@
             <div class="article-detail">
                 <h1 id="detail-title"></h1>
                 <div class="article-detail-date" id="detail-date"></div>
-                <div id="detail-content"></div>
+                <div class="article-body" id="detail-content"></div>
                 <div class="article-gallery" id="detail-gallery"></div>
             </div>
         </section>
@@ -335,6 +362,7 @@
                 <h1>Chi Siamo</h1>
                 <p>Benvenuto su Cosplay Italia, il blog dedicato al meraviglioso mondo del cosplay e degli anime italiani.</p>
                 <p style="margin-top: 1rem;">Qui troverai articoli approfonditi, guide pratiche per realizzare i tuoi cosplay, interviste con cosplayer esperti e showcase dei migliori costumi dalle fiere italiane come Lucca Comics & Games, Romics e Napoli Comicon.</p>
+                <p style="margin-top: 1rem;">La nostra missione è promuovere la comunità cosplay italiana, condividere tecniche e ispirazioni, e celebrare la creatività e la passione di chi dedica tempo e risorse per portare in vita i propri personaggi preferiti.</p>
                 <p style="margin-top: 1rem;"><strong>Contattaci:</strong> <a href="mailto:antoniored908@gmail.com" style="color: #a855f7;">antoniored908@gmail.com</a></p>
             </div>
         </section>
@@ -351,30 +379,83 @@
     </footer>
 
     <script>
-        // Sample articles data
+        // Real articles data
         const articles = [
             {
                 id: 1,
-                title: "Guida Completa: Come Realizzare un Costume Cosplay da Zero",
+                title: "Lucca Comics & Games 2025: I Cosplay Più Spettacolari",
                 date: "28 Maggio 2026",
-                excerpt: "Una guida pratica per realizzare il tuo primo costume cosplay, dai materiali alla realizzazione finale.",
-                content: "Realizzare un costume cosplay può sembrare difficile, ma con i giusti materiali e un po' di pazienza, chiunque può creare un bellissimo costume. In questa guida ti mostreremo passo dopo passo come realizzare un cosplay professionale partendo da zero.",
-                emojis: ["👘", "✂️", "🎨"]
-            },
-            {
-                id: 2,
-                title: "Lucca Comics & Games 2026: I Migliori Cosplay",
-                date: "25 Maggio 2026",
-                excerpt: "Scopri i cosplay più spettacolari presentati alla fiera più grande d'Italia.",
-                content: "Lucca Comics & Games è l'evento più importante per il mondo del cosplay italiano. Quest'anno abbiamo raccolto i cosplay più incredibili, dai personaggi anime ai supereroi, dalle principesse Disney ai villain più affascinanti.",
+                excerpt: "Scopri i cosplay più incredibili presentati alla manifestazione più importante d'Italia per il mondo del fumetto, dell'animazione e del cosplay.",
+                content: `
+                    <p>Lucca Comics & Games è senza dubbio l'evento più importante per la comunità cosplay italiana. Quest'anno la manifestazione ha attirato migliaia di cosplayer da tutta Italia, presentando costumi di straordinaria qualità e creatività.</p>
+                    
+                    <h2>I Cosplay Più Memorabili</h2>
+                    <p>Tra i cosplay più apprezzati della manifestazione spiccano quelli dedicati ai personaggi di anime e manga di successo. In particolare, abbiamo visto interpretazioni spettacolari di personaggi da "Jujutsu Kaisen", "Attack on Titan" e "Demon Slayer", con costumi realizzati con una cura ai dettagli impressionante.</p>
+                    
+                    <p>Un cosplay che ha catturato l'attenzione di tutti è stato quello dedicato a Tanjiro Kamado, con l'armatura completa e gli effetti speciali che ricreano perfettamente il personaggio. La dedizione del cosplayer nel riprodurre ogni singolo dettaglio è stata evidente.</p>
+                    
+                    <h2>Innovazioni Tecniche</h2>
+                    <p>Quest'anno abbiamo notato un'evoluzione significativa nell'uso di tecnologie come LED integrati, effetti 3D stampati e materiali innovativi. Molti cosplayer hanno utilizzato resina, EVA foam e tecniche di thermoforming per creare armature e accessori sempre più realistici.</p>
+                    
+                    <h2>La Community Cosplay Italiana</h2>
+                    <p>La manifestazione ha dimostrato che la comunità cosplay italiana è in crescita costante. Non solo per la quantità di partecipanti, ma soprattutto per la qualità e la professionalità dei lavori presentati. Molti cosplayer italiani stanno guadagnando riconoscimento a livello internazionale.</p>
+                `,
                 emojis: ["🎪", "🌟", "👑"]
             },
             {
+                id: 2,
+                title: "Guida Completa: Come Realizzare un Cosplay da Zero",
+                date: "25 Maggio 2026",
+                excerpt: "Una guida pratica e dettagliata per chi vuole iniziare nel mondo del cosplay, dai materiali alla realizzazione del primo costume.",
+                content: `
+                    <p>Realizzare un costume cosplay può sembrare un'impresa difficile, ma con i giusti materiali, un po' di pazienza e seguendo i nostri consigli, chiunque può creare un bellissimo cosplay anche da principiante.</p>
+                    
+                    <h2>Scelta del Personaggio</h2>
+                    <p>Il primo passo è scegliere un personaggio che amate veramente. Per i principianti consigliamo di iniziare con personaggi che hanno costumi relativamente semplici, senza troppi dettagli complessi. Personaggi come Naruto, Luffy o Asuna sono ottimi per iniziare.</p>
+                    
+                    <h2>Materiali Essenziali</h2>
+                    <ul>
+                        <li><strong>EVA Foam:</strong> Il materiale più versatile per realizzare armature e accessori</li>
+                        <li><strong>Resina:</strong> Per creare dettagli più rigidi e realistici</li>
+                        <li><strong>Tessuti:</strong> Cotone, poliestere e seta per gli abiti</li>
+                        <li><strong>Colla e Adesivi:</strong> Essenziali per assemblare i pezzi</li>
+                        <li><strong>Vernici:</strong> Per dare il colore finale al costume</li>
+                    </ul>
+                    
+                    <h2>Strumenti Necessari</h2>
+                    <p>Avrete bisogno di forbici, cutter, pistola per colla a caldo, carta vetrata, pennelli e una macchina da cucire. Se non avete una macchina da cucire, potete iniziare con costure a mano o cercare qualcuno che vi aiuti.</p>
+                    
+                    <h2>Il Processo di Realizzazione</h2>
+                    <p>Iniziate creando uno schema del vostro costume. Prendete le misure del vostro corpo e create un pattern su carta. Successivamente, trasferite il pattern sui materiali e iniziate a tagliare. Per le armature, usate EVA foam e create i dettagli con vernice e weathering.</p>
+                    
+                    <h2>Consigli Finali</h2>
+                    <p>Non abbiate fretta. Un buon cosplay richiede tempo. Dedicate almeno 2-3 mesi per un primo costume di qualità. Guardate tutorial online, unitevi a comunità cosplay locali e non abbiate paura di chiedere aiuto. La comunità cosplay italiana è molto accogliente e disponibile a condividere conoscenze.</p>
+                `,
+                emojis: ["👘", "✂️", "🎨"]
+            },
+            {
                 id: 3,
-                title: "Intervista: La Vita di un Cosplayer Professionista",
+                title: "Intervista: La Vita di un Cosplayer Professionista Italiano",
                 date: "22 Maggio 2026",
-                excerpt: "Conosciamo meglio uno dei cosplayer più famosi della comunità italiana.",
-                content: "Abbiamo intervistato uno dei cosplayer più talentuosi della comunità italiana. Scopri come ha iniziato, quali sono i suoi cosplay preferiti e come gestisce il suo lavoro nel mondo del cosplay.",
+                excerpt: "Conosciamo meglio uno dei cosplayer più talentuosi della comunità italiana e scopriamo come ha trasformato la sua passione in una carriera.",
+                content: `
+                    <p>Abbiamo avuto il piacere di intervistare Marco, uno dei cosplayer più rinomati della comunità italiana, che ha trasformato la sua passione per il cosplay in una vera e propria carriera professionale.</p>
+                    
+                    <h2>Come è Iniziato Tutto?</h2>
+                    <p><strong>Marco:</strong> "Ho iniziato a fare cosplay circa 10 anni fa, quando ero ancora alle superiori. Il mio primo costume era abbastanza semplice, ma mi ha appassionato subito. Quello che mi ha colpito è stata la comunità: persone creative, appassionate e sempre disposte ad aiutare."</p>
+                    
+                    <h2>L'Evoluzione Professionale</h2>
+                    <p><strong>Marco:</strong> "Dopo alcuni anni, ho iniziato a ricevere commissioni da altri cosplayer. Poi sono arrivate le collaborazioni con brand di anime e fumetti, gli inviti alle convention come ospite speciale, e infine i contratti pubblicitari. Oggi il cosplay è il mio lavoro principale."</p>
+                    
+                    <h2>I Cosplay Più Memorabili</h2>
+                    <p><strong>Marco:</strong> "Tra i miei cosplay preferiti c'è sicuramente quello di Geralt di Rivia da The Witcher. Ho impiegato quasi 4 mesi per realizzarlo, con armatura completa in EVA foam e resina. Un altro che mi è rimasto nel cuore è Saitama da One Punch Man, per la semplicità che nasconde una complessità tecnica incredibile."</p>
+                    
+                    <h2>Consigli per i Principianti</h2>
+                    <p><strong>Marco:</strong> "Il mio consiglio principale è: non abbiate fretta di diventare perfetti. Ogni cosplayer ha iniziato da zero. Dedicate tempo a imparare le tecniche, non abbiate paura di sbagliare, e soprattutto, divertitevi. Se amate quello che fate, la qualità seguirà naturalmente."</p>
+                    
+                    <h2>Il Futuro del Cosplay</h2>
+                    <p><strong>Marco:</strong> "Vedo il cosplay italiano in crescita costante. Sempre più persone si avvicinano a questo hobby, e la qualità dei costumi è in continuo miglioramento. Spero che il cosplay diventi sempre più riconosciuto come forma d'arte, non solo come hobby."</p>
+                `,
                 emojis: ["🎤", "💫", "🏆"]
             }
         ];
@@ -404,7 +485,7 @@
 
             document.getElementById('detail-title').textContent = article.title;
             document.getElementById('detail-date').textContent = article.date;
-            document.getElementById('detail-content').innerHTML = `<p>${article.content}</p>`;
+            document.getElementById('detail-content').innerHTML = article.content;
             document.getElementById('detail-gallery').innerHTML = article.emojis.map(emoji => 
                 `<div class="gallery-image">${emoji}</div>`
             ).join('');
